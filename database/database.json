@@ -1,0 +1,44 @@
+{
+  "movies": [
+    {
+      "title": "Show One",
+      "plot": "Waistcoat typewriter tofu meditation flexitarian disrupt franzen air plant locavore tousled drinking vinegar. You probably haven't heard of them 3 wolf moon la croix sustainable, shoreditch actually godard deep v DIY blog butcher quinoa ramps echo park meditation. ",
+      "seasons": "4",
+      "image": "https://i.giphy.com/media/akQosu8PbIaEU/giphy.webp",
+      "watched": "false",
+      "id": 1
+    },
+    {
+      "title": "Show Two",
+      "plot": "Here is a smaller description to test this style.",
+      "seasons": "7",
+      "image": "https://i.pinimg.com/736x/5b/0f/eb/5b0feb55cdda6c07603c31446190a82c--minimal-poster-minimal-movie-posters.jpg",
+      "watched": "false",
+      "id": 2
+    },
+    {
+      "title": "DARE",
+      "plot": "1",
+      "seasons": "Shaman neutra chillwave jean shorts chicharrones activated charcoal vegan man braid austin. Vegan jean shorts waistcoat irony, cliche fanny pack jianbing cray.",
+      "image": "https://i.pinimg.com/originals/eb/5e/d8/eb5ed812c8e76bd32a27e5d8824ffcbd.jpg",
+      "watched": "true",
+      "id": 3
+    },
+    {
+      "title": "Show Four",
+      "plot": " Shaman neutra chillwave jean shorts chicharrones activated charcoal vegan man braid austin. Vegan jean shorts waistcoat irony, cliche fanny pack jianbing cray.",
+      "seasons": "2",
+      "image": "https://i.pinimg.com/originals/7c/60/66/7c6066e48a8cc6b9c906f9d46ae969d8.jpg",
+      "watched": "false",
+      "id": 4
+    },
+    {
+      "title": "Show Five",
+      "plot": " Shaman neutra chillwave jean shorts chicharrones activated charcoal vegan man braid austin. Vegan jean shorts waistcoat irony, cliche fanny pack jianbing cray.",
+      "seasons": "2",
+      "image": "https://i.pinimg.com/originals/74/cc/53/74cc531dd9b4d322c218c3f868c53bad.jpg",
+      "watched": "false",
+      "id": 5
+    }
+  ]
+}

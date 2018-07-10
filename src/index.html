@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nashville Software School</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <button id="tv-add-btn" class="addbut lb">Add A Show</button>
+  <div id="movie-modal"></div>
+  <div id="delete-me" class="btns"></div>
+  <div class="panels"></div>
+  <div id="watched" class="btns"></div>
+
+  <div id="add" class="tv-add-modal">
+    <div class="modal-content animate">
+      <div class="add-container">
+        <label for="Title">
+          <b>Title</b>
+        </label>
+        <input type="text" id="add-title" placeholder="Enter Name of Show" name="Title" required>
+        <label for="psw">
+          <b>Plot</b>
+        </label>
+        <input type="text" id="add-plot" placeholder="Summarize Show" name="Plot" required>
+        <label for="email">
+          <b>Seasons</b>
+        </label>
+        <input type="range" id="add-seasons" name="Seasons" min="1" max="30" required>
+        <span id="range-txt" class="range-slider-value">15</span>
+        <button id="submit" class="sub">Save TV Show</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./bundle.js"></script>
+
+</body>
+
+</html>
