@@ -58,11 +58,13 @@ class showBuilder {
                         </div>
                     `)
                     }
+
                     delDiv.append(`
-                    <div class="btn panel" id="btn${movie.id}">
+                    <div class="btn panel" id="wat${movie.id}">
                     <button class="del-btn" id=${movie.id}>Delete</button>
                     </div>
                     `)
+                    
                     $(`#${movie.id}`).css('background-image', `url("${movie.image}")`);
                     sizeAdjust(movie.id);
 
@@ -81,18 +83,26 @@ class showBuilder {
 
                     console.log('watch btn', e);
                 });
+
                 $('.del-btn').on('click', (e) => {
                     const movieId = e.target.id;
                     e.stopPropagation();
-                    AJ.delMovie(movieId);
+                    AJ.delMovie(movieId)
+                        .then(this.buildShows);
                 });
+                
+                
+                
                 const panels = document.querySelectorAll('.panel');
 
                 function toggleOpen() {
                     this.classList.toggle('open');
                     const watchBut = $(`#btn${this.id}`)
-                    // console.log(watchBut);
+                    const delBut = $(`#wat${this.id}`)
+                    console.log(watchBut);
                     watchBut[0].classList.toggle('open');
+                    delBut[0].classList.toggle('open');
+
                 }
 
                 function toggleActive(e) {
@@ -111,7 +121,7 @@ class showBuilder {
                     const plot = e.currentTarget.previousElementSibling.innerText
                     console.log(e);
                     if (e.which == 13) {
-                        AJ.putMovie(title, seasons, plot, e.target.dataset.image, e.target.dataset.watched, e.target.dataset.id)
+                        AJ.putMovie(title, plot, seasons, e.target.dataset.image, e.target.dataset.watched, e.target.dataset.id)
                             .then(() => {
                                 this.buildShows();
                             })
@@ -162,6 +172,8 @@ function valueUpdated(e) {
 }
 
 $('#add-seasons').on('input', valueUpdated);
+
+
 
 
 
